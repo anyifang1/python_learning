@@ -1,0 +1,41 @@
+# list from https://github.com/TwoWater/Python/blob/master/Article/PythonBasis/python3/List.md
+# List （列表）是 Python 内置的一种数据类型。 它是一种有序的集合，可以随时添加和删除其中的元素。
+a = 123
+b = 234
+c = 345
+d = 456
+e = 567
+list_1 = [a, b, c, d]   # list是可变的
+tuple_1 = (a, b, c, d, e, list_1)   # tuple（元组）是不可变的,但是可以通过修改其中的元素改变元组
+f = tuple(list_1)
+print(list_1)   # 通过索引来访问列表
+print(list_1[1:2])  # 通过方括号的形式来截取列表中的数据，如[0:2][:]等
+list_1.append(e)   # 添加数据项
+print(list_1)
+del list_1[2]   # 删除数据项
+print(list_1, f)
+print(tuple_1)
+'''List（列表）运算符
+列表对 + 和 * 的操作符与字符串相似。+ 号用于组合列表，* 号用于重复列表。
+
+Python 表达式	结果	描述
+len([1, 2, 3])	3	计算元素个数
+[1, 2, 3] + [4, 5, 6]	[1, 2, 3, 4, 5, 6]	组合
+['Hi!'] * 4	['Hi!', 'Hi!', 'Hi!', 'Hi!']	复制
+3 in [1, 2, 3]	True	元素是否存在于列表中
+for x in [1, 2, 3]: print x,'''
+'''List （列表）函数&方法
+函数&方法	描述
+len(list)	列表元素个数
+max(list)	返回列表元素最大值
+min(list)	返回列表元素最小值
+list(seq)	将元组转换为列表
+list.append(obj)	在列表末尾添加新的对象
+list.count(obj)	统计某个元素在列表中出现的次数
+list.extend(seq)	在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）
+list.index(obj)	从列表中找出某个值第一个匹配项的索引位置
+list.insert(index, obj)	将对象插入列表
+list.pop(obj=list[-1])	移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
+list.remove(obj)	移除列表中的一个元素（参数是列表中元素），并且不返回任何值
+list.reverse()	反向列表中元素
+list.sort([func])	对原列表进行排序'''
