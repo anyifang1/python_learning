@@ -1,0 +1,7 @@
+# 赋值即把一个数值分配给内存
+a, b, c = 6, 8, 9   # 系列赋值
+print(a, b, c)
+a, b, c = c, a, b
+print(a, b, c)
+d = e = 9   # 链式赋值
+print(d, e)
